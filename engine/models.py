@@ -15,7 +15,7 @@ class TransRecord(models.Model):
     dealPrice = models.FloatField(max_length = 10)
     entrustID = models.IntegerField(unique=True, max_length = 10)
     tradeAccount = models.IntegerField(max_length = 10)
-    status = models.IntegerField(max_length=1)
+    #status = models.IntegerField(max_length=1)
 
 class ClientTransRecord(models.Model):
     accountID = models.ForeignKey(ClientAccount)
